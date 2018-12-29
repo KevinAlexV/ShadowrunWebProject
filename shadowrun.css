@@ -1,0 +1,281 @@
+
+	body {
+		color:#34086C;
+		font-family:Lucida Console,monospace;
+		font-size:90%;
+		margin:0;}
+	header { 
+		background-color:#42428a;
+		box-shadow: .3em .3em .3em rgba(0, 0, 0, 0.5);
+		height:11em;
+		position:fixed;
+		top:0;
+		width:100%;
+		z-index:10;
+		text-align:center;}
+	main {
+		background-color:#666BAA;
+		box-shadow:.2em 0; /*Right, bottom*/
+		margin:0 16em 0 16em;}
+	section {
+		float:left;
+		padding:1em 0 .7em 2em; /*Order is clockwise; ie Top, Right, Bottom, Left*/
+		width:50%;}
+	aside {
+		float:right;
+		padding:1em 0 0 0;
+		width:45%;}
+	h1 {
+		color:#20dfdf;
+		padding-top:.8em;
+		margin:0;
+		font-size:4em;}
+	h2 {
+		text-align:center;
+		padding:0;
+		margin:0;}
+	h3 {
+		padding:.7em;
+		margin: 0 0 0 0;
+		color:#0066cc;}
+	p{
+		text-align:center;
+		padding-bottom:.5em;
+	}
+	table, th ,td{
+		border:1px ridge #34086C;
+		border-collapse:collapse;
+	}
+	table{
+		margin-left:.4em;
+		margin-top:.5em;
+		margin-bottom:1em;
+	}
+	th, td {
+		text-align:left;
+		padding:.4em 1em .1em .4em;
+	}
+	nav li{
+		list-style-type:none;
+		padding:.5em 1em .5em 1em;
+		margin:1em 0 1em 0;
+		}
+	nav ul{
+		overflow:hidden;
+		margin:0 -1.2em 0 -2.2em;
+		float:right;
+		padding-left:.5em;}
+	nav {
+		overflow:hidden;
+		position:fixed;
+		float:left;
+		text-align:center;
+		font-weight:bold;
+		font-size:1.5em;
+		padding-right:.36em;
+		padding-left:2.5em;
+		margin: 1em 0 0 0.5em;
+		}
+	nav a {
+		text-decoration:none;
+		color:blue;
+		transition: color .2s;
+		border:none;}
+	nav a:hover{color:#F00797;}
+	footer {
+		box-shadow:.2em .2em;
+		background-color:#42428a;
+		color:black;
+		font-size:.60em;
+		text-align:center;
+		padding:1em 0 1em 0;
+		font-style:italic;
+		width:100%;
+		clear:both;}
+	video {
+		padding:2em 0 0 2em; 
+		width:80%;}
+	audio {
+		padding-bottom:1em;
+		margin:0;
+		width:100%;}
+/*Id attributes; Referred to as #'attributeID'*/
+	#wrapper {
+		min-width:900px;
+		max-width: 1700px;
+		margin-top: 11em;
+		margin-right:auto;
+		margin-left:auto;
+		width:100%;
+		}
+	#background{
+		position:fixed;
+		top:0;
+		left:0;
+		min-width:100%;
+		min-height:100%;
+		z-index:-5;
+		padding-left:0;}
+	#logo{
+		padding-right:0;
+		width:1em;
+		height:1.3em;}
+	#buttonLI{
+		margin-left:3.6em;
+	}
+	#smallLI{
+		margin-left:2.4em;
+	}
+	#mediumLI{
+		margin-left:1.2em;
+	}
+	#navhome {
+		margin-left:.02em;
+	}
+	#navcharacter {
+		margin-left:1.3em;
+	}
+	#profilepicture {
+		padding-right:0;
+		margin-top:1em;
+		float:left;
+		overflow:auto;
+		width:35%;
+		border:.5em outset lightblue; /*Size - style - color*/
+	}
+	#characterbs {
+		margin:2.2em 0 0 .7em;
+		float:right;
+		width:62%;
+	}
+	#classdesc {
+		margin:1em 0 0 .5em;
+		padding-top:1em;
+		clear:both;
+	}
+	#archetype{
+		clear:left;
+		float:left;
+		width:27%;
+		margin-left:.6em;
+		margin-top:.3em;
+		height:27%;
+	}
+	#personaldata {
+		width:30%; 
+		float:left;
+	}
+	#personaldatatable{
+		float:right; 
+		clear:right; 
+		margin-right:6.9em; 
+		width:50%;
+	}
+	#contactstable {
+		float:left; 
+		width:83%;
+		margin-right:8em;
+	}
+	#attributes{
+		width:25%; 
+		float:left; 
+		clear:right; 
+		clear:left;
+	}
+	#corecombatinfo {
+		width:38%; 
+		float:right; 
+		margin-right:7em;
+	}
+	#attributestable {
+		float:left; 
+		clear:left;
+	}
+	#corecombatinfotable{
+		float:right; 
+		margin-right:6.9em;
+	}
+	#skillstable {
+		float:left; 
+		margin-left:1em;
+	}
+	#mute {
+		outline:none;
+		background-image:url(resources/unmuted.png);
+		background-color: Transparent;
+		background-size:100%;
+		padding-top:1em;
+		margin-right:1em;
+		border:0;
+		height: 1.5em;
+		width: 1.5em;
+	}
+/*Classes; Referred to as .'classname'*/
+	.column{
+		float: left;
+		width:32%;}
+	.box {
+		padding:0 1em 1em 1em;
+	}
+	.description {width:92%;}
+	.twentyper {
+		width:20%;
+	}
+	.characterdesc {
+		padding:0 1em 0 1em;
+	}
+	.parallelogram{
+		transform: skew(-25deg);
+		background: #6A086D;
+		background-image:url(resources/parallelogrameffect.gif);}
+	.highlight {
+		background-color:#6A086D;
+	}
+	.highlight:hover:after , .highlight:hover:before{
+		width:100%;
+		left:0;
+	}
+	.highlight:after, .highlight:before{
+		content: ''; 
+		background-color: #F00797;
+		position: absolute;
+		top: calc(100%);
+		width: 0;
+		right: 0;
+		height: .15em;
+	}
+	.highlight:after{
+			transition: width .4s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+	}
+	.highlight:before{
+			transition: width .6s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
+	}
+	.highlight:active{
+		color:#b83d89;
+	}
+	.hightlight:visited{
+		color:blue;
+	}
+@media screen and (max-width: 980px) {
+    #wrapper {
+        width: 100%;
+    }
+	#profilepicture{
+		display:none;
+	}
+	#characterbs{
+		clear:left;
+		clear:right;
+		margin:0;
+	}
+	.twentyper{
+		width:30%;
+		clear:left;
+		clear:right;
+		margin-right:0;
+	}
+	nav{clear:left;
+		display:inline;
+		list-style:none;}
+	nav ul, nav li{float:right;}
+}
