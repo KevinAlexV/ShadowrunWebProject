@@ -22,5 +22,12 @@ function applyProperties(src) {
  * @param {HTMLCollection} data: All relevant data 
  */
 function showCharSheetData(data) {
-    alert(data);
+    var dataStr = "";
+
+    for (var i = 0; i < data.length; i++) {
+        dataStr += data.item(i).getAttribute("name") + "=" + data.item(i).getAttribute("value") + ";";
+    }
+    dataStr = dataStr.slice(0, -1);
+
+    alert(dataStr);
 }
