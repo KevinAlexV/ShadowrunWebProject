@@ -25,7 +25,7 @@ function showCharSheetData(data) {
     var dataStr = "";
 
     for (var i = 0; i < data.length; i++) {
-        dataStr += data.item(i).getAttribute("name") + "=" + data.item(i).value + ";";
+        dataStr += data.item(i).getAttribute("name") + "=" + (data.item(i).value || 0) + ";";
     }
     dataStr = dataStr.slice(0, -1);
 
