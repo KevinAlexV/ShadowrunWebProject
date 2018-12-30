@@ -46,10 +46,7 @@
 			});
 			
 			document.getElementById("savecharacter").onclick = function() {
-				var vals = document.getElementsByClassName("inputField");
-				for (var val of vals)
-					console.log(val);
-				showCharSheetData(vals);
+				showCharSheetData(document.getElementsByClassName("inputField"));
 			};
         });
     </script>
