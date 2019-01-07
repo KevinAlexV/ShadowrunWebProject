@@ -226,7 +226,6 @@
 		padding:1em 2em 1em 2em;
 		color:blue;
 		transition: background-color .2s;
-		transition: color .1s;
 	}
 	#savecharacter:hover{
 	background-color:#F00797;
