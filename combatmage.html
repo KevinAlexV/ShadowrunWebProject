@@ -12,20 +12,6 @@
 	<script>
 	 $(document).ready(function(){
 			
-			// var audio = new Audio("resources/shadowrunreturns.mp3");
-			// audio.play();
-			
-			var button = document.getElementById("mute");
-			button.onclick = function (){
-				if (audio.muted === false) {    
-					   audio.muted = true;
-					   document.getElementById("mute").style.backgroundImage = "url('resources/muted.png')";
-				}
-				else {
-					audio.muted = false;
-					 document.getElementById("mute").style.backgroundImage = "url('resources/unmuted.png')";
-				}
-			};
             $('a').click(function(){
                 var text = this.textContent;
                 var index = 1;
@@ -58,7 +44,6 @@
 	<div id="wrapper">
 		<nav id="navcharacter">
 			<ul>
-				<li class="highlight parallelogram" id="buttonLI"><button id="mute"></button></li>
 				<li class="highlight parallelogram" id="smallLI"><a href="index.html">Home</a></li>
 				<li class="highlight parallelogram change" id="mediumLI"><a href="#">Statistics</a></li>
 				<li class="highlight parallelogram change"><a href="#">Description</a></li>
@@ -72,27 +57,27 @@
 					<table id="personaldatatable">
 						<tr>	
 							<th>Name</th>
-							<td>Dakota</td>
+							<td><input class="inputField inputText" type="text" name="name" value=""></td>
 						</tr>
 						<tr>
 							<th>Metatype (Race)</th>
-							<td>Human</td>
+							<td><input class="inputField inputText" type="text" name="metatype" value=""></td>
 						</tr>
 						<tr>
 							<th>Age</th>
-							<td>68</td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="age" value=""></td>
 						</tr>
 						<tr>
-							<th>Sex</th>
-							<td>Female</td>
+							<th>Sex(M/F)</th>
+							<td><input class="inputField" type="text" name="gender" value=""></td>
 						</tr>
 						<tr>
 							<th>Height</th>
-							<td>5'3"</td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="heightFeet" value="0">'<input class="inputField" type="number" pattern="[0-9]+" name="heightInches" value="0">"</td>
 						</tr>
 						<tr>
 							<th>Weight</th>
-							<td>100lbs</td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="weight" value="0">lbs</td>
 						</tr>
 					</table>
 					
@@ -114,84 +99,85 @@
 					</table>
 					
 					<h3 class="parallelogram" id="attributes">Attributes</h3>
-					<h3 class="parallelogram" id="corecombatinfo">Core Combat Info</h3>
 					<table id="attributestable">
 						<tr>
 							<th>Body</th>
-							<td>5</td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="body" value="0"></td>
 						</tr>
 						<tr>
 							<th>Agility</th>
-							<td>3</td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="agility" value="0"></td>
 						</tr>
 						<tr>
 							<th>Reaction</th>
-							<td>3</td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="reaction" value="0"></td>
 						</tr>
 						<tr>
 							<th>Strength</th>
-							<td>3</td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="strength" value="0"></td>
 						</tr>
 						<tr>
 							<th>Willpower</th>
-							<td>4</td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="willpower" value="0"></td>
 						</tr>
 						<tr>
 							<th>Logic</th>
-							<td>5</td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="logic" value="0"></td>
 						</tr>
 						<tr>
 							<th>Intuition</th>
-							<td>3</td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="intuition" value="0"></td>
 						</tr>
 						<tr>
 							<th>Charisma</th>
-							<td>2</td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="charisma" value="0"></td>
 						</tr>
 						<tr>
 							<th>Edge</th>
-							<td>2</td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="edge" value="0"></td>
 						</tr>
 						<tr>
 							<th>Essence</th>
-							<td>6.0</td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="essence" value="0"></td>
 						</tr>
 					</table>
 					
+					<h3 class="parallelogram" id="corecombatinfo">Core Combat Info</h3>
 					<table id="corecombatinfotable">
 						<tr>
 							<th>Initiative</th>
-							<td>6+1(D6)</td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="initiativeBase" value="0">+ <input class="inputField" type="number" pattern="[0-9]+" name="initiativeD6" value="0">(D6)</td>
 						</tr>
 						<tr>
 							<th>Armor</th>
-							<td>13</td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="armor" value="0"></td>
 						</tr>
 						<tr>
 							<th>Physical Limit</th>
-							<td>5</td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="physicalLimit" value="0"></td>
 						</tr>
 						<tr>
 							<th>Mental Limit</th>
-							<td>6</td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="mentalLimit" value="0"></td>
 						</tr>
 						<tr>
 							<th>Social Limit</th>
-							<td>5</td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="socialLimit" value="0"></td>
 						</tr>
 						<tr>
 							<th>Walk Rate</th>
-							<td>10m</td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="walkRate" value="0">m</td>
 						</tr>
 						<tr>
 							<th>Run Rate</th>
-							<td>25m</td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="runRate" value="0">m</td>
 						</tr>
 						<tr>
 							<th>Sprint Rate</th>
-							<td>+2m</td>
+							<td>+<input class="inputField" type="number" pattern="[0-9]+" name="sprintRate" value="0">m</td>
 						</tr>
 					</table>
+					<input id="savecharacter" class="myButton parallelogram" type="submit" value="Save Character"></li>
 				</section>
 				<aside>
 					<h3 class="parallelogram twentyper">Skills</h3>
@@ -203,15 +189,15 @@
 						</tr>
 						<tr>
 							<th>Free-Fall</th>
-							<td><input class="inputField" type="number" pattern="[0-9]+" name="free-fall" value="1"></td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="free-fall" value="0"></td>
 						</tr>
 						<tr>
 							<th>Automatics</th>
-							<td><input class="inputField" type="number" pattern="[0-9]+" name="automatics" value="2"></td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="automatics" value="0"></td>
 						</tr>
 						<tr>
 							<th>Archery</th>
-							<td><input class="inputField" type="number" pattern="[0-9]+" name="archery" value="3"></td>
+							<td><input class="inputField" type="number" pattern="[0-9]+" name="archery" value="0"></td>
 						</tr>
 						<tr>
 							<th>Clubs</th>
@@ -544,7 +530,6 @@
 							<td>3</td>
 						</tr>
 					</table>
-					<input id="savecharacter" class="myButton" type="submit" value="Save Character">
 				</aside>
 				<div style="clear:both;"></div>
 			</div>

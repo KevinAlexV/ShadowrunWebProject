@@ -8,24 +8,6 @@
       type="image/ico" 
       href="resources/favicon.ico">
 	<script src="jquery-3.3.1.js"></script>
-	<script>
-	$(document).ready(function(){
-		var audio = new Audio("resources/shadowrunreturns.mp3");
-		audio.play();
-		
-		var button = document.getElementById("mute");
-		button.onclick = function (){
-			if (audio.muted === false) {    
-				   audio.muted = true;
-				   document.getElementById("mute").style.backgroundImage = "url('resources/muted.png')";
-			}
-			else {
-				audio.muted = false;
-				 document.getElementById("mute").style.backgroundImage = "url('resources/unmuted.png')";
-			}
-		};
-	});
-	</script>
 </head>
 <body>
 	<img src="resources/background.jpg" id="background" alt="background">
@@ -34,7 +16,6 @@
 	<div id="wrapper">
 		<nav id="navhome">
 			<ul>
-				<li class="highlight parallelogram" id="buttonLI"><button id="mute"></button></li>
 				<li class="highlight parallelogram" id="smallLI"><a href="decker.html">Decker</a></li>
 				<li class="highlight parallelogram" id="mediumLI"><a href="combatmage.html">Combat Mage</a></li>
 				<li class="highlight parallelogram"><a href="streetsamurai.html">Street Samurai</a></li>
