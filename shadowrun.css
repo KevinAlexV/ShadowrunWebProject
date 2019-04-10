@@ -16,7 +16,9 @@
 	main {
 		background-color:#666BAA;
 		box-shadow:.2em 0; /*Right, bottom*/
-		margin:0 16em 0 16em;}
+		margin:0 18.25em 0 18.25em;
+		position:relative;/*along with position:absolute; in nav, this makes the nav bar show underneath.*/
+		}
 	section {
 		float:left;
 		padding:1em 0 .7em 2em; /*Order is clockwise; ie Top, Right, Bottom, Left*/
@@ -62,11 +64,9 @@
 		}
 	nav ul{
 		overflow:hidden;
-		margin:0 -1.2em 0 -2.2em;
 		float:right;
 		padding-left:.5em;}
 	nav {
-		overflow:hidden;
 		position:fixed;
 		float:left;
 		text-align:center;
@@ -74,7 +74,7 @@
 		font-size:1.5em;
 		padding-right:.36em;
 		padding-left:2.5em;
-		margin: 1em 0 0 0.5em;
+		position:abosolute;
 		}
 	nav a {
 		text-decoration:none;
@@ -95,6 +95,10 @@
 	video {
 		padding:2em 0 0 2em; 
 		width:80%;}
+	img {
+		height:auto;
+		max-width:100;
+	}
 	audio {
 		padding-bottom:1em;
 		margin:0;
@@ -115,7 +119,7 @@
 /*Id attributes; Referred to as #'attributeID'*/
 	#wrapper {
 		min-width:900px;
-		max-width: 1700px;
+		max-width: 1900px;
 		margin-top: 11em;
 		margin-right:auto;
 		margin-left:auto;
@@ -143,28 +147,68 @@
 		margin-left:1.2em;
 	}
 	#navhome {
-		margin-left:.02em;
+		padding-right:3em;
+		padding-left:0;
+		margin-left:.4em;
 	}
 	#navcharacter {
-		margin-left:1.3em;
+		margin-left:.27em;
 	}
-	#profilepicture {
-		padding-right:0;
-		margin-top:1em;
+	#rules {
+		margin: 0 24.5em 0 24.5em;
+	}
+	#prioritytable {
+		margin:1em 0 0 0;
+		max-width:100%;
+		height:auto;
+	}
+	#skilltests{
 		float:left;
-		overflow:auto;
-		width:35%;
+		clear:right;
+		margin:1.5em 0 0 1.5em;
+	}
+	#backstory{
+		float:left;
+		width:12%;
+		clear:right;
+		margin:1.5em 0 0 .25em;
+	}
+	#D6{
+		padding-right:0;
+		margin:1em .75em .75em 0;
+		float:left;
+		width:inherit;
+		max-width:100%;
+		height:auto;
+		overflow:scroll;
+		clear:right;
 		border:.5em outset lightblue; /*Size - style - color*/
 	}
-	#characterbs {
-		margin:2.2em 0 0 .7em;
-		float:right;
-		width:62%;
+	#profilePicture {
+		padding-right:0;
+		margin:1em;
+		max-width:40%;
+		height:auto;
+		float:left;
+		overflow:scroll;
+		clear:right;
+		border:.5em outset lightblue; /*Size - style - color*/
 	}
 	#classdesc {
 		margin:1em 0 0 .5em;
 		padding-top:1em;
 		clear:both;
+	}
+	#backstoryInput{
+		float:right;
+		clear:right;
+		margin-right:1em;
+		margin-top:1em;
+		width:53%;
+		height:34em;
+		resize:none;
+		background-color: #6166a5;
+		border:1px ridge #34086C;
 	}
 	#archetype{
 		clear:left;
@@ -190,8 +234,8 @@
 	}
 	#contactstable {
 		float:left; 
-		width:83%;
-		margin-right:8em;
+		margin-right:6.8em; 
+		width:85%;
 	}
 	#attributes{
 		width:25%; 
@@ -214,8 +258,11 @@
 		width:50%;
 	}
 	#skillstable {
-		float:left; 
+		float:left;
 		margin-left:1em;
+	}
+	#activeSkills{
+		width:40%;
 	}
 	#savecharacter{
 		clear:left;
@@ -233,16 +280,18 @@
 	#savecharacter:active{
 		color:#F00797;
 	}
-	#mute {
-		outline:none;
-		background-image:url(resources/unmuted.png);
-		background-color: Transparent;
-		background-size:100%;
-		padding-top:1em;
-		margin-right:1em;
-		border:0;
-		height: 1.5em;
-		width: 1.5em;
+	#wrappedText{
+		padding-top:.1em;
+	}
+	#imgCredits{
+		width:20em;
+		max-width:100%;
+		height:20em;
+		max-width:100%;
+		float:left;
+		margin:0 2em 5em 0;
+	}
+	#imgCaption{
 	}
 /*Classes; Referred to as .'classname'*/
 	.column{
