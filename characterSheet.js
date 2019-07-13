@@ -24,13 +24,14 @@ var CharacterSheet = /** @class */ (function () {
         for (i = 0; i < this.skills.length; i++) {
             if (this.skills[i].name === name) {
                 this.skills[i].score = score;
-                return;
+                return this.skills[i];
             }
         }
         this.skills[this.skills.length] = {
             name: name,
             score: score
         };
+		return this.skills[this.skills.length - 1];
     };
     CharacterSheet.prototype.removeSkill = function (name) {
         var i = 0;
