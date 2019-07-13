@@ -1,6 +1,5 @@
 HTML
 -Make a search function that allows users to manually look for specific skills to add to a character sheet as opposed to listing every skill.
--Make entire parallelogram a hyperlink as opposed to solely text
 -Look into supporting larger resolutions
 -Look into mobile support
 
