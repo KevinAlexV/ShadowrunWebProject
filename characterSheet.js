@@ -9,15 +9,6 @@ var CharacterSheet = /** @class */ (function () {
         this.money = 0;
         this.attributes = [];
         this.skills = [];
-        initMechanism = initMechanism || "NEW";
-        switch (initMechanism.toUpperCase()) {
-            case "NEW":
-            case "N":
-                break;
-            case "LOAD":
-            case "L":
-                break;
-        }
     }
     CharacterSheet.prototype.addSkill = function (name, score) {
         var i = 0;

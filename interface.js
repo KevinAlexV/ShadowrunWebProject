@@ -6,8 +6,11 @@ $(document).ready(function(){
 
 	document.getElementById("addSkill").onclick = function() {
 		
-		var skillName = window.prompt("Enter a Skill:", "SkillNameHere");
-		var skillScore = window.prompt("Enter a Skill Score:", "SkillScoreHere");
+		do {
+			var skillName = window.prompt("Enter a Skill:", "");
+			if (skillName === "") alert("Please enter a Valid Skill Name");
+		} while (skillName === "");
+		var skillScore = window.prompt("Enter a Skill Score:", "");
 		
 		var skill = characterSheet.addSkill(skillName, skillScore);
 		var skillElement = document.createElement("tr");
