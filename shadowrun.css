@@ -81,7 +81,7 @@
 		color:blue;
 		transition: color .2s;
 		border:none;}
-	nav a:hover{color:#F00797;}
+	nav li:hover{color:#F00797;}
 	footer {
 		box-shadow:.2em .2em;
 		background-color:#42428a;
